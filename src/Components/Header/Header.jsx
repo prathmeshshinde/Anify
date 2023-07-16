@@ -9,8 +9,8 @@ const Header = ({ user, handleLogin }) => {
   return (
     <div className="flex bg-header-bg p-4 justify-between items-center w-11/12  sm:w-3/4">
       <div className="flex items-center">
-        <img src={AnifyLogo} alt="anifyLogo" className=" w-16 mx-3" />
-        <h1 className="text-3xl font-bold text-header-red text-center font-poppins">
+        <img src={AnifyLogo} alt="anifyLogo" className="w-10 mr-3 sm:w-16" />
+        <h1 className="text-3xl font-bold text-header-red text-center font-poppins hidden sm:block">
           Anify
         </h1>
       </div>

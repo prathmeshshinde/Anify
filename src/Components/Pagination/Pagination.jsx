@@ -6,6 +6,7 @@ const Pagination = ({ setPageCount, pageCount }) => {
       alert("This is last page");
     } else {
       setPageCount(pageCount + 10);
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     }
   };
 
@@ -14,6 +15,7 @@ const Pagination = ({ setPageCount, pageCount }) => {
       alert("This is first page");
     } else {
       setPageCount(pageCount - 10);
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     }
   };
 
