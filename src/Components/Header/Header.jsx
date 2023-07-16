@@ -1,13 +1,15 @@
 import React from "react";
 import { loginURL } from "../../spotify";
 import { getTokenFromUrl } from "../../spotify";
+import AnifyLogo from "../../assets/anify.svg";
 
 const Header = ({ user, handleLogin }) => {
   const accToken = getTokenFromUrl().access_token;
 
   return (
-    <div className="flex bg-header-bg p-4 justify-between w-11/12  sm:w-3/4">
-      <div>
+    <div className="flex bg-header-bg p-4 justify-between items-center w-11/12  sm:w-3/4">
+      <div className="flex items-center">
+        <img src={AnifyLogo} alt="anifyLogo" className=" w-16 mx-3" />
         <h1 className="text-3xl font-bold text-header-red text-center font-poppins">
           Anify
         </h1>
