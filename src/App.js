@@ -14,6 +14,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Modal from "./Components/Modal/Modal";
 import NoResults from "./assets/noResults.gif";
+import SpotifyLogo from "./assets/spotify.png";
 
 const spotify = new SpotifyWebApi();
 
@@ -253,6 +254,12 @@ function App() {
         )}
         <ToastContainer />
       </div>
+      {/* <div className="flex justify-center items-center px-10 my-10">
+        <img src={SpotifyLogo} alt="spotifyLogo" className="w-16" />
+        <p className=" font-semibold text-xl ml-3 font-poppins">
+          Spotify ©. All Right Reserved.
+        </p>
+      </div> */}
     </>
   );
 }

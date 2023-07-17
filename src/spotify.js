@@ -1,7 +1,7 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
 const redirect_uri = "https://anify-anime.vercel.app/";
-const client_id = "54ed8b13de1e4d00809b0c156047da59";
+const client_id = process.env.REACT_APP_CLIENT_ID;
 
 const scopes = [
   "user-top-read",
