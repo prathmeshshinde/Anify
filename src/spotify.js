@@ -3,16 +3,7 @@ export const authEndpoint = "https://accounts.spotify.com/authorize";
 const redirect_uri = "https://anify-anime.vercel.app/";
 const client_id = process.env.REACT_APP_CLIENT_ID;
 
-const scopes = [
-  "user-top-read",
-  "user-read-playback-state",
-  "user-read-currently-playing",
-  "user-read-recently-played",
-  "user-modify-playback-state",
-  "playlist-read-private",
-  "playlist-modify-public",
-  "playlist-modify-private",
-];
+const scopes = ["playlist-modify-public"];
 
 export const loginURL = `${authEndpoint}?client_id=${client_id}&redirect_uri=${redirect_uri}&scope=${scopes.join(
   "%20"
