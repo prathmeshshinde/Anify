@@ -1,6 +1,6 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
-const redirect_uri = "https://anify-anime.vercel.app";
+const redirect_uri = "https://anify-anime.vercel.app/";
 const client_id = "c8a6b0d143df4c30b7bea3c9eff9b5a0";
 
 const scopes = ["playlist-modify-public"];
